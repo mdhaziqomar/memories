@@ -1,0 +1,17 @@
+{
+  "name": "chung-hua-media-management",
+  "version": "1.0.0",
+  "description": "Media Management System for Chung Hua Middle School BSB",
+  "author": "Haziq Omar - IT Department",
+  "license": "PROPRIETARY",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "setup": "node setup.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
